@@ -1,0 +1,481 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://themes.googleusercontent.com/static/fonts/lato/v7/SrH4OiQlr11FDKIskY9CXQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Raleway Thin'), local('Raleway-Thin'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/b1OWH1QXUjVxHio22EJrRQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/oDShYVLKr2BTVkQewdDISfesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/1JmffU9tqSVQbX7FjPwOC_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/fj4GB2RX6COD1Mnz53LyUA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/xzAo-d1GDuS5ODPAwWYuAPesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/069MgaHTcPZqi8A_E_Ms5fesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/X1ufuAAvJ16cEIfooVvP8PesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/0s8lYwMT6ckDq8b6iiClNfesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Raleway Heavy'), local('Raleway-Heavy'), url(https://themes.googleusercontent.com/static/fonts/raleway/v7/M3aQkqO5PyTwV-HFYQ2gV_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------*\
+-         variables        -
+\*------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: 'Raleway', Sans-serif;
+  font-weight: 500;
+}
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus {
+  outline: 1px solid #70ffbf;
+}
+
+
+/*------------------------*\
+-         variables        -
+\*------------------------*/
+
+$darkgreen : #00b20f;
+$midgreen : #19ff2d;
+$green : #00ff16;
+$darkred: #b2003e;
+$red : #ff0059;
+$grey: #8d9995;
+
+/*------------------------*\
+-         setup        -
+\*------------------------*/
+
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+html {
+  background-color: #fff;
+}
+
+::selection {
+  background: #70ffbf;
+}
+::-moz-selection {
+  background: #70ffbf;
+}
+
+/*------------------------*\
+-         main form        -
+\*------------------------*/
+
+#login_form{
+  display: block;
+  width: 33%;
+  margin: 10px auto 0;
+  padding: 20px;
+}
+
+#login_form p {
+  display: inline-block;
+}
+#signup,#login-btn{
+  float: right;
+  font-size: 1.2em;
+  margin: 20px;
+  text-decoration: underline;
+  color: $red;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+}
+#signup:hover,#login-btn:hover {
+  color: $grey;
+}
+#login-btn:after, #signup:after {
+  content: "\f177";
+  font-family: 'FontAwesome';
+}
+#match {
+    display: none;
+    color : #ff0000;
+    text-align: center;
+    padding: 2px;
+}
+#cred {
+  color: #ff0000;
+  text-align: center;
+  padding: 2px;
+}
+form div {
+  position: relative;
+  overflow: hidden;
+}
+#logo {
+  display: block;
+  width: 200px;
+  margin: 10px auto 0;
+}
+
+.login, .form{
+  display: block;
+  color: #00b5ea;
+  height: 4rem;
+  width: 100%;
+  margin: 5px 0 25px;
+  font-size: 2rem;
+  padding: 3px 10px;
+  font-family: 'Raleway';
+  font-weight: 500;
+  background: none;
+  z-index: 2  ;
+  border: 1px solid #ddd;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+input:focus {
+outline: #00b5ea 1px solid;
+}
+.form:focus {
+  outline: #ff9955 1px solid;
+}
+.lgn-lbl, .form-lbl {
+  transition: background 0.2s, color 0.2s, top 0.2s;
+  position: absolute;
+  color: #00b5ea;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 10px;
+  font-family: 'Raleway';
+  font-weight: 100;
+  background: #fff;
+  font-size: 2rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+input:focus + .lgn-lbl, input:valid + .lgn-lbl, input:focus + .form-lbl, input:valid + .form-lbl {
+  background: #23ff00;
+  color: #444;
+  font-size: 80%;
+  z-index: 2;
+  top: 100%;
+  margin-top: -25px;
+  padding: 3px 10px; 
+  font-weight: 500;
+}
+input:focus + .form-lbl, input:valid + .form-lbl {
+  background: #ff9955
+}
+input:valid{
+  background-color: #fff;
+}
+.form:valid {
+  background: #fff3e8;
+}
+input[type=checkbox] {
+  display: inline-block;
+  height: 1.2em;
+  width: 1.2em;
+  margin: 20px;
+}
+
+/* --------- progress bars ------------*/
+progress {
+  display: none;
+  position: absolute;
+  height: 2rem;
+  width: 96%;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: width;
+  -webkit-transition: width;
+  margin-left: 2%;
+
+   //mozilla
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress::-webkit-progress-bar {
+  transition: width;
+  -webkit-transition: width;
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress::-webkit-progress-value {
+  background: #FFFC69;
+  background-image:-webkit-linear-gradient(-45deg, transparent 33%, rgba(255, 255, 255, 0.3) 33%, rgba(255,255, 255, 0.3) 66%, transparent 66%);
+  border-radius: 2px; 
+  background-size: 35px 2rem;
+  -webkit-animation: animate-stripes 5s linear infinite;
+  animation: animate-stripes 5s linear infinite;
+}
+progress::-moz-progress-bar {
+  background: #FFFC69;
+  background-image:-moz-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%);
+  border-radius: 2px; 
+  background-size: 35px 2rem;
+  -webkit-animation: animate-stripes 5s linear infinite;
+  animation: animate-stripes 5s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+   100% { background-position: -100px 0px; }
+}
+@keyframes animate-stripes {
+   100% { background-position: -100px 0px; }
+}
+
+/*--------- timeout ------------------*/
+
+#timeoutPopup {
+    display:none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top:0; right:0; bottom:0; left:0;
+    padding:4px;
+    border:solid 1px #999999;
+    text-align:center;
+    z-index: 9999;
+}
+#timeout {
+  position: relative;
+  margin: 6.75% auto;
+  width: 75%;
+  height: 75%;
+  background: #fff;
+
+}
+#time-desc {
+  color: #00b5e5;
+  margin: 20px;
+}
+#time {
+  border-radius: 100%;
+  border: 20px solid #00b5e5;
+  height: 90%;
+  margin: auto;
+}
+/*--------------end of time ----------*/
+
+/*--------- Buttons ----------*/
+
+.bg_btn{
+  border: 2px solid #70ffbf;
+  background: rgba(255,255,255,0.7);
+  font: 500 25px 'Raleway';
+  color: #70ffbf;
+  position: relative;
+  transition: all 0.2s;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  min-width :150px;
+}
+.bg_btn:hover {
+  background: #70ffbf;
+  color: #fff;
+}
+.bg_btn:active {
+  background: #C9FFE7;
+  color: #fff;
+}
+#lgn-btn:hover {
+  background-color: #f80159;
+}
+#lgn-btn:active{
+  background-color: #fff;
+  border: 2px solid #00b5ea;
+}
+#lgn-btn {
+  @extend .login;
+  background: $green;
+  border: none;
+  width: 80%;
+  margin: 20px auto;
+  color: #fff;
+}
+#sml_btn {
+  margin: 20px;
+  font-family: 'Raleway', Sans-serif;
+  height: 2rem;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: background 0.1s, color 0.1s;
+  -webkit-transition: background 0.1s, color 0.1s;
+}
+#sml_btn:hover {
+  background: #fff;
+  color: #00b5e5;
+}
+button {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+/* --------------- header and nav ----------*/
+
+header {
+  position: relative;
+  height: 75px;
+  width: 100%;
+  //background-image: linear-gradient(to top, #3636DA, #2DA3FF 30%, #2DA3FF 70%, #3636DA);
+  background: #2da3ff;
+  z-index: 2;
+  display: flex;
+  display: -webkit-flex;
+}
+header h2 {
+  color: #fff;
+  font: 900 50px/75px 'Raleway';
+  text-shadow: 1px 1px #000;
+  margin-left: 20px;
+  flex: 1;
+  -webkit-flex:1;
+}
+#panel {
+  font: 500 20px 'Raleway';
+  text-align: left; 
+  margin-right: 20px;
+  color: #fff;
+}
+#border-bottom {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  z-index: 2;
+}
+#border-bottom-fill {
+  fill:#FF549F;
+}
+nav {
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  padding: 50px;
+  position: relative;
+  z-index: 0;
+  top: -25px;
+  height: 150px;
+  width: 100%;
+  background: url("/images/nav-back.svg") repeat;
+}
+nav button {
+  flex:1;
+}
+nav img {
+  position: relative;
+  top: -33px;
+  height: 133px;
+  width: 133px;
+}
+#logout {
+  border: 1px solid #FFFC69;
+  padding: 1px 3px;
+  color: #00b5e5;
+  font: 500 18px 'Raleway';
+  width: 100%;
+  background: #FFFC69;
+  transition:background 0.2s, color 0.2s;
+}
+#logout:hover {
+  background: none;
+  color: #FFFC69;
+}

@@ -1,0 +1,32 @@
+/*-------- graph ----------*/
+.graph_svg {
+  border: 1px solid #00b5e5;
+  height: 220px;
+  width: 100%; }
+
+.graph {
+  fill: #00b5e5;
+  stroke: #fff;
+  stroke-width: 2; }
+
+.graph:hover {
+  fill: #e9055c; }
+
+#y-label {
+  font-size: 10px; }
+
+#x-labels {
+  font-size: 4px; }
+
+line {
+  stroke: #ff0000; }
+
+#graph-desc {
+  font-size: 50px;
+  fill: #00b5e5;
+  font-family: helvetica, Sans-serif; }
+
+/* -----------END GRAPH ---------------*/
+#content {
+  font: 300 1.5rem 'Lato';
+}

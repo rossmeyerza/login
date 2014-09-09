@@ -1,0 +1,54 @@
+table {
+  width: 96%;
+  margin: 20px 2%;
+  font: 1rem 'Lato';
+}
+td {
+  border-top: 1px solid #000;
+  padding: 0;
+}
+#content {
+  font: 300 1.5rem 'Lato';
+}
+td input[readonly]  {
+	margin: 0;
+	width: 100%;
+	padding: 2px;
+	border: none;
+	font: 300 1rem 'Lato';
+	background: transparent;
+}
+td input, td input:valid  {
+	margin: 0;
+	width: 100%;
+	padding: 2px;
+	border: none;
+	border-radius: 5px;
+	font: 300 1rem 'Lato';
+	background: rgba(255,255,255,0.3);
+}
+td input[type=text]:focus{
+	outline: #fff solid 2px;
+}
+td input[readonly]:focus{
+	outline: none
+}
+.group0 {
+	background: #ff23bb;
+	//color: #fff;
+}
+.group1 {
+	background: #66aa00;
+}
+.group2 {
+	background: #55ffdd;
+}
+.group3 {
+	background: #226677;
+}
+.group4 {
+	background: #4758a3;
+}
+#age {
+	width: 150px
+}
